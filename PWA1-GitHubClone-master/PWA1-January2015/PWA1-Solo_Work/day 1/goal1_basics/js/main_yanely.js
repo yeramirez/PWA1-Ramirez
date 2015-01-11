@@ -171,14 +171,20 @@
     document.write("Number + Strings : ", myStr);
 
     //other math operations will result in a number
-    
-
+    var myStr1 = "6" / 2;
+    console.log("Number / Strings: ", myStr1);
+    document.write("<br>" + " Number / Strings: ", myStr1);
 
     //order of operations: ( ), *, /, +, -
-
+    var num4 = 4 + (6 * 5 - 10) / 5;
+    console.log("Order of operations: ", num4);
+    document.write("<br>" + "Order of operations: ", num4);
 
     //modulo example
-
+    var num5 = 10;
+    var num6 = 3;
+    console.log("Remainder: ", num5%num6);
+    document.write("<br>" + "Remainder: ", num5%num6);
 
 // arrays: (definition, indexing, getter/setter)
     console.log('------ arrays ----------');
@@ -197,7 +203,20 @@
 
      */
     var myArr = ['bond', 007, function () {
+
     }, true];
+
+    console.log("index 0: ", myArr[0]);
+    document.write("<br>" + "index 0: ", myArr[0]);
+
+    console.log("index 1: ", myArr[1]);
+    document.write("<br>" + "index 1: ", myArr[1]);
+
+    console.log("index 2: ", myArr[2]);
+    document.write("<br>" + "index 2: ", myArr[2]);
+
+    console.log("index 3: ", myArr[3]);
+    document.write("<br>" + "index 3: ", myArr[3]);
 
     /*
      - arrays can hold any value type, separated by comma
@@ -212,15 +231,17 @@
 
      STUDENT ACTIVITY 1:
 
-     1.  create an array with 4 numbers 10, 50, 100, 200
-     2.  console.log the sum of all the numbers in an array
+     1.  create an array with 4 numbers 10, 50, 100, 200 */
+    var array1 = [10, 50, 100, 200];
 
-     ********************************************/
+     /*2.  console.log the sum of all the numbers in an array*/
+    console.log("The total sum is: ", array1[0] + array1[1] + array1[2] + array1[3]);
+    document.write("<br>" + "The total sum is: ", array1[0] + array1[1] + array1[2] + array1[3]);
+
+     /*********************************************/
 
 
-    /*******************************************
-
-     STUDENT ACTIVITY 2:
+     /*STUDENT ACTIVITY 2:
 
      1.  create an empty array called myArray
      2.  Add to the myArray using setters, the following (baseball, football, basketball)
@@ -232,6 +253,14 @@
      3. output array items using string concatenation
 
      ********************************************/
+
+    var myArray = new Array();
+    myArray[0] = "baseball";
+    myArray[1] = "football";
+    myArray[2] = "basketball";
+
+    alert(myArray [0] + ', ' + myArray[1] +', ' + myArray[2]);
+
 
 
         // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
@@ -267,13 +296,14 @@
      a true or false boolean
      - conditions can be used just about anywhere, not just in conditionals and loops
      */
-
+    var myVar = 5 >3; //true
+    console.log("is 5 greater than 3: ", myVar);
+    document.write("<br>" + "is 5 greater than 3: ", myVar);
 
     /*
      most common comparison operators:
      > < >=  <=  !== ! ==  ===
      Sort: A-Za-z
-
 
      A conditional is a block of code that only runs if the condition is
      true (example, state switching)
@@ -283,6 +313,11 @@
      //block of code or ‘actions’
      };
      */
+
+    if (5>3) {
+        console.log(" '5 > 3: ', True!"); // = "true"
+        document.write("<br>" + " '5 > 3: ', True!"); // = "true"
+    }
 
 
     /*
@@ -296,6 +331,23 @@
      */
 
     // == performs a loose check of two values
+    if ("1" == 1) {
+        console.log("'1' == 1, True");
+        document.write("'1' == 1, True");
+    };
+
+    if (1 == 1) {
+        console.log("1 == 1, True");
+    };
+
+    if ("1" === 1) {
+        console.log("'1' == 1, True");
+    };
+
+    if ("1" !== 1) {
+        console.log("'1' !== 1, True");
+    };
+
 
 
     /* ==============================================================
@@ -310,11 +362,52 @@
      ================================================================
      */
 
+    if (a < b){
+        console.log("a is less than b");
+        document.write("a is less than b");
+    }else{
+        //execute this block of code if the "IF" statement returns false
+        console.log("if-else: the 'IF' statement is false");
+        document.write("if-else: the 'IF' statement is false");
+    }
+
 
     //if - else if - else (allows for multiple options)
 
+    if (a < b){
+        console.log("a is less than b");
+        document.write("<br>" + "a is less than b");
+    }else if (a < c){
+        console.log("a is less than c");
+        document.write("<br>" + "a is less than c");
+    }else if (a < d){
+        console.log("a is less than d");
+        document.write("<br>" + "a is less than d");
+    }else{
+        //execute this block of code if all the others return false
+        console.log("if - else if: all others returned false");
+        document.write("<br>"+ "if - else if: all others returned false");
+    };
+
 
     //nested conditional statement
+
+    if ("a" === "a"){ //1st IF statement
+        //execute the block of code if a is equal to a
+
+        if ("b" === "b"){ //nested IF statement : 2nd IF statement
+            //execute this block of code if b is equal to b
+            console.log("In Nested if-else / b === b: True");
+            document.write("<br>" + "In Nested if-else / b === b: True");
+        }else{  //nested ELSE statement
+            //execute block of code if the matching "IF" statement returns false
+        };
+
+    }else{
+        //execute this block of code if the 1st "IF" statement returns false
+        console.log("nested conditional: 1st IF returned false");
+        document.write("<br>" + "nested conditional: 1st IF returned false");
+    };
 
 
     /* ==============================================================
@@ -334,12 +427,26 @@
      */
 
     //AND logical operator
-
+    if ( (1 === 1) && ("hi" === "hi") ){
+        console.log('&& logical operator: both sides = true');
+        document.write("<br>" + '&& logical operator: both sides = true');
+    }
 
     //OR logical operator
+    if ( (1 === 1) && ("hi" === "no") ){
+        console.log('|| logical operator: one sides = true');
+        document.write("<br>" + '|| logical operator: one sides = true');
+    }
 
 
     // ! NOT logical operator
+    if ( !(1 === 1) && ("hi" === "no") ){
+        console.log('! NOT logical operator: left is true converted to NOT');
+        document.write('! NOT logical operator: left is true converted to NOT');
+    }else{
+        console.log('! NOT logical operator: both sides = false');
+        document.write("<br>" + '! NOT logical operator: both sides = false');
+    };
 
 
     // all logical operators with order of operations
@@ -357,6 +464,17 @@
      1. learn if - else
      ********************************************/
 
+    var weather = "cloudy";
+
+    if ("weather" == "sunny"){
+        bobsMood = 'happy;';
+    }else{
+        bobsMood = 'sad';
+    };
+
+    console.log("If-Else weather: " + bobsMood);
+    document.write("<br>" + "If-Else weather: " + bobsMood);
+
 
     /*******************************************
      STUDENT ACTIVITY 4:
@@ -373,6 +491,35 @@
      - else bobsMood = "sad"
      3.  console.log the results after each conditional
      ********************************************/
+
+
+    var weather = 'Sunny';
+    var waves = 10;
+
+    //long if-else method
+    if (weather === 'Sunny'){
+        if (waves === 10){
+            mood = 'PUMPED';
+        }else if ((waves <= 9) && (waves >= 5)){
+            mood = 'mellow';
+        }else{
+            mood = 'bummed'
+        }
+    }else if (weather === 'Overcast'){
+        if ((waves < 10) && (waves >= 7)){
+            mood = 'jackedUP' ;
+        }else if ((waves <= 6) && (waves >= 3)){
+            mood = 'totally bummed';
+        }else{
+            mood = 'not happy';
+        }
+    }else{
+        mood = 'sad';
+    };
+
+    console.log("Mood: ", mood);
+    document.write("<br>" + "Mood: ", mood);
+
 
 
     /*
@@ -395,6 +542,13 @@
      - : = false (perform the new statement after the :)
      */
 
+    var Mood = (weather === 'Sunny' ? 'happy' : 'sad');
+    console.log("mood: ", Mood);
+    document.write("<br>" + "mood: ", Mood);
+    var smile = true;
+    console.log('I am ' + (smile === true ? 'happy' : 'sad') + '!!');
+    document.write("<br>" + 'I am ' + (smile === true ? 'happy' : 'sad') + '!!');
+
 
     /*******************************************
      STUDENT ACTIVITY 5:
@@ -408,7 +562,10 @@
      4.  console.log the results
      ********************************************/
 
-
+    var temp = 60;
+    var student1 = (weather === 'Sunny' ? 'happy' : ((temp >= 80) ? 'content' : 'sad'));
+    console.log("Nested ternary weather: ", student1);
+    document.write("<br>"+ "Nested ternary weather: ", student1);
 
 // Functions: (definition, whitespace, invocation, arguments, returns)
     console.log('------Functions ----------');
@@ -453,7 +610,18 @@
      functionName();
      *****************************
 
+*/ //Function literal - example
 
+    var myctr = 1;
+
+    var myCounter = function(){
+        myctr++; //Increments our number by 1
+        console.log('counter = ', myctr); //Outputs the new result
+        document.write("<br>" + 'counter = ', myctr); //Outputs the new results
+    };
+
+    myCounter();  //Will output '2' to the page
+    myCounter();
 
 
      /*
@@ -504,6 +672,18 @@
      6.  console.log the results
      ********************************************/
 
+    var myctr1 = 1; //initialize our variable to 1 - Global
+
+    var myCounter1 = function(newct){
+        myctr1+= newct; //Increments our number by 1
+        console.log('counter = ', myctr1); //Outputs the new result
+        document.write("<br>" + 'counter = ', myctr1); //Outputs the new results
+    };
+
+    myCounter1(5);  //Will output '2' to the page
+    myCounter1(2);
+
+
 
     /*******************************************
      function literal: returning values
@@ -531,6 +711,19 @@
      4.  console.log the results
      ********************************************/
 
+    var myctr2 = 1; //initialize our variable to 1 -Global
+    var myCounter2 = function(newct){
+
+        myctr2 += newct;
+        return myctr2;
+
+    };
+
+    var cnt = myCounter2 (5);
+    console.log('console = ', cnt);
+    document.write("<br>" + 'console = ', cnt);
+
+
 
     /*******************************************
      STUDENT ACTIVITY 8:
@@ -541,5 +734,56 @@
      4. return Mood
      5. console.log the Results
      ********************************************/
+
+    var value1 = 'Sunny';
+    var value2 = 10;
+
+    var moodFN = function (weather, waves){
+        if (weather === 'Sunny'){
+            if (waves === 10){
+                Mood = 'PUMPED';
+            }else if((waves < 9) (waves >= 5)){
+                Mood = 'mellow';
+            }else{
+                Mood = 'bummed';
+            };
+
+        }else if(weather === 'Overcast'){
+            if ((waves <= 10) && (waves >= 7)){
+                Mood = 'Jacked Up';
+            }else if((waves <= 6) && (waves >= 3)){
+                Mood = 'totally bummed';
+;           }else{
+                Mood = 'not happy';
+            };
+        };
+
+        return Mood;
+
+    };
+
+    //long if-else method
+    if (weather === 'Sunny'){
+        if (waves === 10){
+            mood = 'PUMPED';
+        }else if ((waves <= 9) && (waves >= 5)){
+            mood = 'mellow';
+        }else{
+            mood = 'bummed'
+        }
+    }else if (weather === 'Overcast'){
+        if ((waves < 10) && (waves >= 7)){
+            mood = 'jackedUP' ;
+        }else if ((waves <= 6) && (waves >= 3)){
+            mood = 'totally bummed';
+        }else{
+            mood = 'not happy';
+        }
+    }else{
+        mood = 'sad';
+    };
+
+    console.log("Mood: ", mood);
+    document.write("<br>" + "Mood: ", mood);
 
 })();
