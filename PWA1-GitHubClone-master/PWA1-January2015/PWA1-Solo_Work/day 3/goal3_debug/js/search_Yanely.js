@@ -1,4 +1,7 @@
 // 14 total errors
+
+//Name: Yanely Ramirez
+//Date: 01/10/2015
 (function() {
 	
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)

@@ -68,9 +68,9 @@
         if (playerOneHealth<1 && playerTwoHealth<1){        //If statement for neither players winning
             result = "You Both Die";                        //Results ending in both dying
         } else if(playerOneHealth<1){                       //Else if statement that player two wins
-            result =playerTwoName+" WINS!!!"                //Result ending in player two winning
+            result =playerTwoName+" WINS!!!";               //Result ending in player two winning
         } else if(playerTwoHealth<1){                       //Else if statement that player two wins
-            result =playerOneName+" WINS!!!"                //Results
+            result =playerOneName+" WINS!!!";                //Results
         };
 
         return result;                                      //Return your results
