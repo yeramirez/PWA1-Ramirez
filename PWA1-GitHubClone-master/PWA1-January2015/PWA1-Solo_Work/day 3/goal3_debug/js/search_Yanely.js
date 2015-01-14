@@ -2,11 +2,11 @@
 
 //Name: Yanely Ramirez
 //Date: 01/10/2015
-(function() {
+(function(){
 	
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var resultsDIV = document.getElementById("results");   //Added a semi-colon
-		searchInput = document.forms[0].search;            //Added a semi-colon
+		searchInput = document.forms[0].search,           //Added a semi-colon
 		currentSearch = '';                                //Moved semi-colon
 	
 	// Validates search query
