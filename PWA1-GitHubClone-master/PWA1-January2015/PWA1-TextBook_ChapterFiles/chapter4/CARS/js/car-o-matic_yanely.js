@@ -49,10 +49,15 @@ var convertible = [true, false];
     }
       function displayCar(car){
         console.log("MAKES has this many keys: " + Object.keys(makes).length);
+          document.write("<br>" + "MAKES has this many keys: " + Object.keys(makes).length);
         console.log("MODELS has this many keys: " + Object.keys(models).length);
+          document.write("<br>" + "MODELS has this many keys: " + Object.keys(models).length);
         console.log("YEARS has this many keys: " + Object.keys(years).length);
+          document.write("<br>" + "YEARS has this many keys: " + Object.keys(years).length);
         console.log("COLORS has this many keys: " + Object.keys(colors).length);
-        console.log("CONVERTIBLE has this many keys: " + Object.keys(convertible).length);
+          document.write("<br>" + "COLORS has this many keys: " + Object.keys(colors).length);
+          console.log("CONVERTIBLE has this many keys: " + Object.keys(convertible).length);
+          document.write("<br>" + "CONVERTIBLE has this many keys: " + Object.keys(convertible).length);
     }
 
      /* var car = {

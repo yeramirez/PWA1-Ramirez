@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57cf9213-e14a-40c8-9dd8-381a149b12b0" name="Default" comment="" />
+    <list default="true" id="57cf9213-e14a-40c8-9dd8-381a149b12b0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PWA1-GitHubClone-master/PWA1-January2015/PWA1-TextBook_ChapterFiles/chapter4/CARS/js/car-o-matic_yanely.js" afterPath="$PROJECT_DIR$/PWA1-GitHubClone-master/PWA1-January2015/PWA1-TextBook_ChapterFiles/chapter4/CARS/js/car-o-matic_yanely.js" />
+    </list>
     <ignored path="PWA1-Ramirez.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,8 +71,8 @@
       <file leaf-file-name="car-o-matic_yanely.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PWA1-GitHubClone-master/PWA1-January2015/PWA1-TextBook_ChapterFiles/chapter4/CARS/js/car-o-matic_yanely.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94545454" vertical-offset="0" max-vertical-offset="1395">
-              <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.07272727" vertical-offset="645" max-vertical-offset="1470">
+              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -813,14 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PWA1-GitHubClone-master/PWA1-January2015/PWA1-TextBook_ChapterFiles/chapter4/CARS/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PWA1-GitHubClone-master/PWA1-January2015/PWA1-Solo_Work/day 3/goal3_debug/js/search_Yanely.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1905">
@@ -839,6 +833,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PWA1-GitHubClone-master/PWA1-January2015/PWA1-TextBook_ChapterFiles/chapter4/CARS/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PWA1-GitHubClone-master/PWA1-January2015/PWA1-TextBook_ChapterFiles/chapter4/PHRASES/js/phrase-o-matic_yanely.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
@@ -849,8 +851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PWA1-GitHubClone-master/PWA1-January2015/PWA1-TextBook_ChapterFiles/chapter4/CARS/js/car-o-matic_yanely.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94545454" vertical-offset="0" max-vertical-offset="1395">
-          <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.07272727" vertical-offset="645" max-vertical-offset="1470">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
