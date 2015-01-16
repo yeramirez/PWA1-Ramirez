@@ -3,7 +3,6 @@
   PWA-2
 */ 
 
-  <script>
     function makePhrases() {
       var words1 = ["24/7", "multi-tier", "30,000 foot", "B-to-B", "win-win"];
       var words2 = ["empowered", "value-added", "oriented", "focused", "aligned"];
@@ -17,4 +16,3 @@
       alert(phrase);
     }
     makePhrases();
-  </script>
