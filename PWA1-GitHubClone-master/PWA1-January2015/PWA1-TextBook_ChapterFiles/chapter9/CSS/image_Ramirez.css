@@ -1,0 +1,15 @@
+/*Made by: Yanely Ramirez*/
+
+body
+{ margin: 20px;
+    background: #000000;
+    color: #FFD700;
+    text-align: center;
+}
+img
+{
+    margin: auto;
+    display: block;
+    padding-bottom: 10px;
+}
+
