@@ -1,4 +1,8 @@
-// 14 total errors
+// Create privatized scope using a self-executing function
+//
+
+
+
 (function(){
 	
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
@@ -8,19 +12,21 @@
 	;
 	
 	// Validates search query
-	var validqte == function(query){
-		
+	var validqte = function(query){ //fixed ==
+
+
+
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) = " "){
+		while(query.charAt(0) === " "){   //fixed error replaced 1 = with 3 =
 			query = query.substring(1, query.length);
 		};
-		while(query.charAt(query.length-1) === ""){
-			query = query.substring(0, query.length-1);
-		;
+		while(query.charAt(query.length-1) === "") {
+			query = query.substring(0, query.length - 1);
+		};//fixed error closer error added curly brace
 		
 		// Check search length, must have 3 characters
 		if(query.length < 3){
-			alert("Your search query is too small, try again.);
+			alert("Your search query is too small, try again.");//added "
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
@@ -31,40 +37,40 @@
 	};
 	
 	// Finds search matches
-	var search = function(query)
+	var search = function(query){		//added brace
 		
 		// split the user's search query string into an array
-		var queryArray = query.join(" ");
+		var queryArray = query.split(" "); //fixed error chenged .join to .split
 		
 		// array to store matched results from database.js
 		var results = [];
 
 		// loop through each index of db array
-		for(var i=0, j=db.length; i<j; i++){
-		
+		for(var i=0, j=db.length; i<j; i++) {
+
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
 			var dbTitleEnd = db[i].indexOf('|');
-			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
-			
+			var dbitem = db[i].toLowerCase().substring(0, dbTitleEnd); ///fixed toLowerCase
+
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
-			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
-				var qitem = queryArray[ii].tolowercase();
-				
+			for (var ii = 0, jj = queryArray.length; ii < jj; ii++) {
+				var qitem = queryArray[ii].toLowerCase(); //fixed toLowerCase
+
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
 				var compare = dbitem.indexOf(qitem);
-				if(compare !== -1){
+				if (compare !== -1) {
 					results.push(db[i]);
-				};
-			;
-		;
+				};//fixed error closer error added curly brace
+			};//fixed error closer error added curly brace
+		};//fixed error closer error added curly brace
 		
 		results.sort();
-		
+
 		// Check that matches were found, and run output functions
-		if(results.length = 0){
+		if(results.length === 0){
 			noMatch();
 		}else{
 			showMatches(results);
@@ -95,7 +101,7 @@
 			// title of video ends with pipe
 			// pull the title's string using index numbers
 			titleEnd = results[i].indexOf('|');
-			title = results[i].subString(0, titleEnd);
+			title = results[i].substring(0, titleEnd);
 			
 			// pull the video url after the title
 			url = results[i].substring(results[i].indexOf('|')+1, results[i].length);
@@ -112,9 +118,9 @@
 		var query = searchInput.value;
 		validqte(query);
 
-        // return false is needed for most events - this will be reviewed in upcoming course material
-        // THE LINE DIRECTLY BELOW IS CORRECT
+		// return false is needed for most events - this will be reviewed in upcoming course material
+		// THE LINE DIRECTLY BELOW IS CORRECT
 		return false;
-	;
+	};  //fixed error closer error added curly brace
 
 })();
